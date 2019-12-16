@@ -1,0 +1,113 @@
+
+div.pokemon {
+    background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/09/All-Pokemon-Background-HD-1.jpg);
+    background-size: 100%;
+}
+
+div.pokeOut {
+    color: blue;
+    text-shadow: 2px 2px 0px yellow;
+    background-color: rgba(255, 255, 255, 0.85);
+    position: absolute;
+    left: 39.5%;
+    top: 32%;
+    width: 20em;
+    height: 20em;
+    border-radius: 1em;
+    border: solid black 3px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+div.pokeOut h1 {
+    margin: 10% 22%;
+    font-size: 2.5em;
+    text-shadow: 1px 1px black;
+}
+
+div.pokeOut p {
+    color: yellow;
+    text-shadow: 2px 2px 0px blue;
+    font-size: 1.75em;
+    text-align: center;
+    padding-bottom: .5em;
+    kerning: 1em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+div.pokeIn img, div.pokeIn2 img {
+    
+    width: 150%;
+    height: 150%;
+    margin: 0 auto;
+}
+
+div.pokeIn, div.pokeIn2 {
+    margin-top: em;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 1em;
+    border: solid red 3px;
+    position: absolute;
+    padding-right: 2.7em;   
+}
+
+div.pokeIn {
+    top: 45%;
+    left: 5%;
+}
+
+div.pokeIn2 {
+    top: 45%;
+    left: 50%;
+}
+
+ul.headLinks {
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+div.rightArrow {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 1em;
+    border: solid white 3px;
+    padding-left: .5em;
+}
+
+ul.intervalRight li {
+    display: block;
+    float: left;
+    text-align: left;
+}
+
+
+div.leftArrow {
+    position: absolute;
+    top: 50%;
+    left: 22%;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 1em;
+    border: solid white 3px;
+    padding-right: .5em;
+}
+
+div.leftArrow img {
+    transform: scaleX(-1);
+    float: right;
+}
+
+ul.intervalLeft li {
+    display: inline-block;
+    float: right;
+}
+
+ul.intervalLeft > li , ul.intervalRight > li {
+    color: yellow;
+    text-shadow: 1px 1px blue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    padding: 0 .25em 0 .25em ;
+}
