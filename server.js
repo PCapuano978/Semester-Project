@@ -14,7 +14,7 @@ const hbs = require('express-handlebars')({
 
   app.get("/", (request, response) => {
     response.render('index',  {
-      title: "Patrick's Pokémon Package",
+      title: "Patrick's Pokédex Plus",
     });
   });
 

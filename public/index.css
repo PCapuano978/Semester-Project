@@ -1,7 +1,12 @@
 
 div.pokemon {
+    height: 34%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
     background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/09/All-Pokemon-Background-HD-1.jpg);
     background-size: 100%;
+    border-bottom: solid 2px rgb(0, 47, 255);
 }
 
 div.pokeOut {
@@ -10,18 +15,18 @@ div.pokeOut {
     background-color: rgba(255, 255, 255, 0.85);
     position: absolute;
     left: 39.5%;
-    top: 32%;
-    width: 20em;
-    height: 20em;
+    top: .5%;
+    width: 20.5em;
+    height: 15em;
     border-radius: 1em;
     border: solid black 3px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    padding-bottom: 1em;
+    padding-bottom: 0;
 }
 
 div.pokeOut h1 {
-    margin: 10% 22%;
+    margin: 3% 24%;
     font-size: 2.5em;
     text-shadow: 1px 1px black;
 }
@@ -29,17 +34,20 @@ div.pokeOut h1 {
 div.pokeOut p {
     color: yellow;
     text-shadow: 2px 2px 0px blue;
-    font-size: 1.75em;
+    position: absolute;
+    top: 32%;
+    left: 31%;
+    font-size: 1.5em;
     text-align: center;
-    padding-bottom: .5em;
+    padding-bottom: 3em;
     kerning: 1em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 div.pokeIn img, div.pokeIn2 img {
     
-    width: 150%;
-    height: 150%;
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
 }
 
@@ -49,7 +57,8 @@ div.pokeIn, div.pokeIn2 {
     border-radius: 1em;
     border: solid red 3px;
     position: absolute;
-    padding-right: 2.7em;   
+    padding-right: 1em; 
+    padding-left: 1em;  
 }
 
 div.pokeIn {
@@ -69,7 +78,7 @@ ul.headLinks {
 
 div.rightArrow {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 65%;
     background-color: rgba(0, 0, 0, 0.85);
     border-radius: 1em;
@@ -86,17 +95,23 @@ ul.intervalRight li {
 
 div.leftArrow {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 22%;
     background-color: rgba(0, 0, 0, 0.85);
     border-radius: 1em;
     border: solid white 3px;
     padding-right: .5em;
+    width: auto;
+    height: auto;
+    max-width: 100%;
 }
 
 div.leftArrow img {
     transform: scaleX(-1);
     float: right;
+    width: auto;
+    height: auto;
+    max-width: 100%;
 }
 
 ul.intervalLeft li {
@@ -110,4 +125,25 @@ ul.intervalLeft > li , ul.intervalRight > li {
     font-family: 'Times New Roman', Times, serif;
     font-size: 2em;
     padding: 0 .25em 0 .25em ;
+}
+
+div.digimon {
+    height: 33%;
+    width: 100%;
+    position: absolute;
+    top: 34%;
+    background-image: url(https://wallpaperaccess.com/full/700769.jpg);
+    background-size: 100%;
+    border-bottom: solid 2px rgb(0, 47, 255);
+    filter: drop-shadow(0px -10px 5px);
+}
+
+div.yugioh {
+    height: 33%;
+    width: 100%;
+    position: absolute;
+    top: 67%;
+    background-image: url(https://wallpaperplay.com/walls/full/f/1/b/275460.jpg);
+    background-size: 100%;
+    filter: drop-shadow(0px -10px 5px);
 }
