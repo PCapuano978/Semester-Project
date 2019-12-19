@@ -1,18 +1,30 @@
-  
+{{!-- start of the index page (only one) that is hosted via Handlebars --}}
+
+{{!-- The document is slit into three sections, with the first being the Pokemon Pokedex imported over from my Express Project. --}}
 <div class=pokemon>
+
+    {{!-- This block that appears on the page consists of the main Pokemon part in having the name and image displayed respectively in these elements. --}}
      <div class=pokeOut>
 
         <h1 class=pokedex></h1>
+
         <p class=number></p>
 
+         <div class="wow pulse">
+
          <div class=pokeIn>
-         </div>
-         <div class=pokeIn2>
+
          </div>
 
+         <div class=pokeIn2>
+
+         </div>
+
+      </div>
          
      </div>
 
+    {{!-- Next up is this right arrow, which is... a right arrow. It consists of the following image below as well. --}}
      <div class="rightArrow">
 
 
@@ -21,7 +33,7 @@
          </div>
 
         
-
+    {{!-- As a mirror to the right arrow, here's the left one. --}}
      <div class="leftArrow">
 
         <img id="leftButton" src="https://people.emich.edu/dheiss2/231/231_Project_1/images/arrow.png" alt="">
@@ -29,12 +41,62 @@
          </div>
 </div>
          
+{{!-- Next up is the Digimon section where you'll see a lot of the code being very similar in structure, just with differing theming.  --}}
 <div class=digimon>
 
+{{!-- Our first example of this is the main window, which appears very similar to the Pokemon one. --}}
+<div class=digiOut>
 
+        <h1 class=digidex></h1>
+        <p class=numberD></p>
+
+         <div class=digiIn>
+         </div>
+
+     </div>
+
+     
+     {{!-- And these arrows as well come back around for navigation, but interestingly use the hosted Font Awesome and use the "7x" at the end to determine their size of seven pixels. --}}
+     <div class="rightDigi">
+
+        <i class="far fa-arrow-alt-circle-right fa-7x"></i>
+
+         </div>
+
+   </div>
+
+     <div class="leftDigi">
+
+        <i class="far fa-arrow-alt-circle-left fa-7x"></i>
+
+         </div>
 
 </div>
         
+{{!-- And for our final section is the Yu-gi-oh one, which (surprise surprise) is not much different in structuring again and acts as the last part of the document. --}}
 <div class=yugioh>
+
+<div class=yugiOut>
+
+        <h1 class=yugidex></h1>
+        <p class=numberY></p>
+
+         <div class=yugiIn>
+            <img class="yugiImage" src="">
+         </div>
+
+     </div>
+
+     <div class="rightYugi">
+
+        <i class="far fa-arrow-alt-circle-right fa-7x"></i>
+
+         </div>
+
+     <div class="leftYugi">
+
+       <i class="fas fa-arrow-alt-circle-left fa-7x"></i>
+
+         </div>
 
 </div>
