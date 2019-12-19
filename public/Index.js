@@ -65,13 +65,13 @@ function increase1() {
             const {...pokemon} = data.sprites;
             console.log(pokemon)
             const selector = document.querySelector(".pokeIn");
-            selector.innerHTML = `<img src="${pokemon.front_default}" />`;
+            selector.innerHTML = `<img class="wow pulse" src="${pokemon.front_default}" />`;
             const selector2 = document.querySelector(".pokedex");
             selector2.innerHTML = `${name}`;
             const selector3 = document.querySelector(".number");
             selector3.innerHTML = `Pokedéx #${id}`;
             const selector4 = document.querySelector(".pokeIn2");
-            selector4.innerHTML = `<img src="${pokemon.back_default}" />`;
+            selector4.innerHTML = `<img class="wow pulse" src="${pokemon.back_default}" />`;
         }
 );
 }
@@ -95,13 +95,13 @@ function decrease1() {
             const {...pokemon} = data.sprites;
             console.log(pokemon)
             const selector = document.querySelector(".pokeIn");
-            selector.innerHTML = `<img src="${pokemon.front_default}" />`;
+            selector.innerHTML = `<img class="wow pulse" src="${pokemon.front_default}" />`;
             const selector2 = document.querySelector(".pokedex");
             selector2.innerHTML = `${name}`;
             const selector3 = document.querySelector(".number");
             selector3.innerHTML = `Pokedéx #${id}`;
             const selector4 = document.querySelector(".pokeIn2");
-            selector4.innerHTML = `<img src="${pokemon.back_default}" />`;
+            selector4.innerHTML = `<img class="wow pulse" src="${pokemon.back_default}" />`;
         }
 );
 }
@@ -116,13 +116,13 @@ fetch (`https://pokeapi.co/api/v2/pokemon/${ID}/`)
             const {...pokemon} = data.sprites;
             console.log(pokemon)
             const selector = document.querySelector(".pokeIn");
-            selector.innerHTML = `<img src="${pokemon.front_default}" />`;
+            selector.innerHTML = `<img class="wow pulse" src="${pokemon.front_default}" />`;
             const selector2 = document.querySelector(".pokedex");
             selector2.innerHTML = `${name}`;
             const selector3 = document.querySelector(".number");
             selector3.innerHTML = `Pokedéx #${id}`;
             const selector4 = document.querySelector(".pokeIn2");
-            selector4.innerHTML = `<img src="${pokemon.back_default}" />`;
+            selector4.innerHTML = `<img class="wow pulse" src="${pokemon.back_default}" />`;
         }
 );
 
@@ -176,7 +176,7 @@ function increaseDigi() {
             const [digimon] = data;
             console.log(digimon)
             const selector = document.querySelector(".digiIn");
-            selector.innerHTML = `<img src="${digimon.img}" />`;
+            selector.innerHTML = `<img class="wow pulse" src="${digimon.img}" />`;
             const selector2 = document.querySelector(".digidex");
             selector2.innerHTML = `${digimon.name}`;
             const selector3 = document.querySelector(".numberD");
@@ -205,7 +205,7 @@ function decreaseDigi() {
             const [digimon] = data;
             console.log(digimon)
             const selector = document.querySelector(".digiIn");
-            selector.innerHTML = `<img src="${digimon.img}" />`;
+            selector.innerHTML = `<img class="wow pulse" src="${digimon.img}" />`;
             const selector2 = document.querySelector(".digidex");
             selector2.innerHTML = `${digimon.name}`;
             const selector3 = document.querySelector(".numberD");
@@ -225,8 +225,7 @@ fetch (`https://digimon-api.herokuapp.com/api/digimon/id/${digiID}/`)
             const [digimon] = data;
             console.log(digimon)
             const selector = document.querySelector(".digiIn");
-            
-            selector.innerHTML = `<img src="${digimon.img}" />`;
+            selector.innerHTML = `<img class="wow pulse" src="${digimon.img}" />`;
             const selector2 = document.querySelector(".digidex");
             selector2.innerHTML = `${digimon.name}`;
             const selector3 = document.querySelector(".numberD");
@@ -241,8 +240,8 @@ fetch (`https://digimon-api.herokuapp.com/api/digimon/id/${digiID}/`)
 
 let yugiID = 1;
 
-var yugiRight = document.querySelector(".fa-arrow-alt-circle-right").addEventListener("click", increaseyugi);
-var yugiLeft = document.querySelector(".fa-arrow-alt-circle-left").addEventListener("click", decreaseyugi);
+var yugiRight = document.querySelector(".fa-arrow-alt-circle-up").addEventListener("click", increaseyugi);
+var yugiLeft = document.querySelector(".fa-arrow-alt-circle-down").addEventListener("click", decreaseyugi);
 
 // Key Event Listener
 document.addEventListener('keydown', (event) => {
@@ -250,16 +249,16 @@ document.addEventListener('keydown', (event) => {
     console.log(keyName);
   
     // Single Interval.
-    if (keyName === 'd') {
+    if (keyName === 'l') {
         increaseyugi();
-    } else if(keyName === 'a') {
+    } else if(keyName === 'j') {
         decreaseyugi();
 
     // Interval by Ten.
-    } else if (keyName === 'w') {
+    } else if (keyName === 'i') {
         increaseyugi(); increaseyugi(); increaseyugi(); increaseyugi(); increaseyugi();
         increaseyugi(); increaseyugi(); increaseyugi(); increaseyugi(); increaseyugi();
-    } else if (keyName === 's') {
+    } else if (keyName === 'k') {
         decreaseyugi(); decreaseyugi(); decreaseyugi(); decreaseyugi(); decreaseyugi(); 
         decreaseyugi(); decreaseyugi(); decreaseyugi(); decreaseyugi(); decreaseyugi();  
     }
@@ -269,7 +268,7 @@ document.addEventListener('keydown', (event) => {
 
 function increaseyugi() {
     yugiID++;
-    if (yugiID > 100) {
+    if (yugiID > 10337) {
         yugiID = 1;
      }
 
@@ -290,7 +289,7 @@ function increaseyugi() {
 function decreaseyugi() {
     yugiID--;
     if (yugiID < 1) {
-        yugiID = 100;
+        yugiID = 10338;
      } else if (yugiID < 0) {
         yugiID = 1;
     }
