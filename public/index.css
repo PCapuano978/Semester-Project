@@ -1,4 +1,9 @@
 
+/* This stylesheet naturally acts as the main (and only) CSS page for the distributed styles amongst the index page.  */
+
+/* You see, I would explain this junk... but it mostly written out like that for me already, so I hope you pardon my laziness in having this be more explicit. */
+/* Thanks. */
+
 div.pokemon {
     height: 34%;
     width: 100%;
@@ -235,7 +240,7 @@ div.yugiOut {
     left: 39.5%;
     top: 2%;
     width: 20.5em;
-    height: 16em;
+    height: 15.9em;
     border-radius: 1em;
     border: solid black 3px;
     font-family: 'Times New Roman', Times, serif;
@@ -264,8 +269,8 @@ div.yugiOut p {
 }
 
 div.yugiIn img {
-    width: 51%;
-    height: 51%;
+    width: 50%;
+    height: 50%;
     filter: drop-shadow(0px 3px 5px black);
 }
 
@@ -273,6 +278,7 @@ div.yugiIn {
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 1em;
     border: solid red 3px;
+    filter: drop-shadow(0px -3px 5px black);
 }
 
 div.yugiIn {
@@ -315,7 +321,7 @@ div.leftYugi > i {
     color: aqua;
 }
 
-
+/* Oh, but I shouldn't forget these media queries that play an important role in the responsiveness that the site holds. Because it's relatively simple on containers, only the main sections of the "Outs" and arrows have to me moved to make sure everything fits nicely. It's mostly designed with two snaps of a tablet and phone mode being most considered (that latter most being my favorite for the compactness, but my opinion doesn't matter here). */
 
 @media screen and (max-width: 1200px) {
 
@@ -359,7 +365,7 @@ div.leftYugi > i {
 @media screen and (max-width: 800px) {
 
     div.pokeOut {
-        left: 36%;
+        left: 37%;
     }
 
     div.leftArrow {
@@ -391,7 +397,7 @@ div.leftYugi > i {
     }
 
     div.yugiOut {
-        left: 36%;
+        left: 37%;
     }
 
     div.leftYugi {
